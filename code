@@ -1,0 +1,5 @@
+lines = input().split()
+arr = input().split()
+happy = { num: num for num in input().split()}
+unhappy = { num: num for num in input().split()}
+print(sum([1 if num in happy else -1 if num in unhappy else 0 for num in arr]))
